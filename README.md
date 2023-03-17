@@ -21,11 +21,7 @@ Explanation:-
 • For running the spark program. I used a py version of ipynb program with the help of AWS S3 , AWS EMR and putty to run the code on a cluster.
 Conclusion:-
 Pre-processing of the csv file is done successfully by Removing all columns except tweet, removed non-english tweets, user data , links, converting string to words , removing stopwords and converting the data into vectors .Used LDA to find the topic composition and the most important words in each topic with also their indices. With number of topics as 5 , I received a better prediction without the topic distribution included but when number of topics were 40 then I got better ROC with topic distribution. Also tried with other many numbers of topics . Thus, I find out how using the Topic Modeling information helps improve the classification accuracy in this problem and how to use pyLDAvis to visualize the tweets.
-Submission Map:-
-zip files consist of files:-
-1) Code folder - Consists of an ipynb file name FinalSourceCode.ipynb which is the source code to run.
-2) Pseudo-code folder - Inside there is a Pseudo_code.txt file with the pseudo code for the spark program.
-3) Results - Consists of images and outputs of various phases of program including AWS EMR cluster results and roc curve results and words for each topic and pyLDAvis visualizations.
+
 Instructions to run code:
 1) install proper spark version and pip install all necessary libraries.
 2) open the code stored in code/ FinalSourceCode.ipynb through a notebook(possibly Jupyter notebook).
